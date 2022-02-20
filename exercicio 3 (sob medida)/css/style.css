@@ -1,0 +1,117 @@
+:root{
+    --primary-color:rgb(35, 175, 199);
+}
+body {
+   background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.corpo{
+    padding: 30px;
+    margin: 35px 10px;
+    text-align: center;
+    display: flex;
+}
+
+.img1{
+    padding: 20px;
+}
+
+button{
+    background-color: rgba(184, 184, 184, 0.472);
+    border-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cesta{
+    background-color: var(--primary-color);
+    border-radius: 10%;
+    margin: -20px;
+    padding: 10px 30px;
+}
+
+#titulo{
+    color: var(--primary-color);
+    text-shadow: 5px 5px 15px grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.barra { 
+    background-color: rgba(255, 255, 255, 0.781);
+    margin: -6px;
+    padding: 2px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.barra .logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.barra ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.barra ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.barra a:link, a:visited {  
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+.barra a:hover {
+    background-color: rgba(128, 128, 128, 0.26);
+    border-radius: 10%;
+    padding: 30px;
+    transition: 0.5s;
+}
+
+/* Visite */
+
+.table{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10%;
+    font-size: 17px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 20px 20px 20px rgb(95, 95, 95);
+}
+
+#porta{
+    margin: 20px 20px 20px 300px;
+}
+
+/* index */
+#zap{
+    font-size: 18px;
+}
+
+.redes-sociais{
+    background-color: rgba(255, 255, 255, 0.589);
+    display: flex;
+    width: 100%;
+}
+
+.redes-sociais img{
+    padding: 20px;
+    width: 32px;
+}
