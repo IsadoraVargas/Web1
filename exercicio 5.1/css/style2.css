@@ -1,0 +1,86 @@
+body {
+    padding: 0 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(3, 3, 70);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(32, 32, 102);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.name {
+    padding: 5px;
+    color: white;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+#cubo {
+    border-radius: 10px;
+}
+
+#a {
+    border-bottom: solid 1px rgb(102, 102, 102);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.t {
+    padding: 5px;
+    margin: 0;
+    color: rgb(139, 137, 137);
+}
+
+.b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c {
+    margin-left: .3rem !important;
+}
+
+.b .c {
+    color: green;
+}
+
+#isa {
+    border-radius: 100%;
+    border: solid rgb(102, 102, 102);
+}
+
+#usu {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* retrato */
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
