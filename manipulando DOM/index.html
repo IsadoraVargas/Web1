@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Dom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Manipulando DOM com JacaScript</h2>
+
+        <h3>Dom (Documento objeto Modelo) é utilizado para 
+            manipular o conteudo do documento HTML</h3>
+
+            <hr>
+            <h4>1. Mudando valores com value</h4>
+
+            <input type="text" id="texto1" value="Texto padrão">
+            <button onclick="mudarTexto()">Mudar Texto</button>
+
+            <hr>
+
+            <h4>2. Mudando valores com innerText</h4>
+
+            <p id="texto2">Texto padrao</p>
+            <button onclick="mudarTexto2()">Mudar texto2</button>
+
+            <hr>
+            <h4>3. Mudando valores com innerHtml</h4>
+
+            <p id="texto3">Texto padrao</p>
+            <button onclick="mudarTexto3()">Mudar texto3</button>
+
+            <hr>
+            <h4>4. Mudando valores com imagem ao clicar</h4>
+
+            <img src="img/gato.png" id="img1" onclick="mudarImagem()">
+             
+            <hr>
+            <h4>5. Mudando a imagem ao passar o mouse</h4>
+
+            <img src="img/l.jpg" id="img2" 
+            onmouseover="mudarImagem2()" 
+            onmouseout="mudarImagem()"
+            >
+
+            <hr>
+            <h4>6. Mudando o CSS</h4>
+            <p id="texto6"> texto colorido </p>
+            <button onclick="mudarCorTexto()">Mudar cor do texto</button>
+
+            <hr>
+            <h4>7. Mudando o CSS (com parâmetros)</h4>
+            <p  onclick="mudarTexto7(this)">Clique aqui</p>
+
+            <hr>
+            <h4>8. Chamando uma function que chama outra</h4>
+
+            <p>Informe os valores</p>
+            <input type="number" id="num1">
+            <input type="number" id="num2">
+
+            <button onclick="calcular(num1, num2)">Calcular</button>
+
+            <h4 id="resultado">Resultado: 0</h4>
+
+            <hr>
+            <h4>9. Clicar, segurar e soltar</h4>
+            <div class="box" onmousedown="segurar(this)" onmouseup="soltar(this)">
+                Clicar!
+            </div>
+
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
