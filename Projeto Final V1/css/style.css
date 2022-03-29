@@ -1,0 +1,385 @@
+:root{
+    --color1:rgb(35, 175, 199);
+    --color2:rgb(35, 120, 199);
+    --color3:rgb(251, 255, 36);
+    --color4:rgba(160, 152, 152, 0.315);
+    --color5:rgba(255, 255, 255, 0.781);
+}
+
+body {
+   background-color: var(--color1);
+   padding: 0;
+   margin: 0;
+}
+
+hr{
+    padding: 10px;
+    border: none;
+}
+
+.promo{
+    background-color: yellow;
+    color: red;
+    padding: 5px 0 5px 0;
+    margin: 0;    
+}    
+
+button{
+    background-color: var(--color4);
+    border-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background-color: var(--color3);
+    border: solid 2px var(--color2);
+    color: var(--color2);
+    transition: 0.3s;
+}
+
+.table{
+    display: inline-block;
+    background-color: var(--color4);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: solid var(--color5);
+    font-size: 20px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px rgb(95, 95, 95);
+}
+
+#aviso{
+    text-align: center;
+    color: var(--color5);
+    text-shadow: 1px 1px 10px black;
+    padding-top: 200px;
+}
+
+.redes-sociais{
+    display: flex;
+}
+
+/* Smartphone Vertical */
+@media (min-width: 375px) {
+  
+    .corpo{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .corpo-card{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 20% 20% 20% 20%;
+    }
+    
+    .cardP{
+        padding: 60px;
+        border: solid 1px var(--color5);
+    }
+
+    .cardP img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .card {
+        border: solid var(--color5);
+        border-radius: 10px;
+        color: var(--color5);
+        padding: 5px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+    
+    .card img{
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .card h1{
+        font-size: 20px;
+    }
+    
+    .card:hover{
+        box-shadow: 0 0 20px 5px var(--color5);
+        background-color: var(--color5);
+        color: black;
+        transition: 0.3s;
+    }
+    
+    .card a:link, a:visited {  
+        color: black;
+        transition: 0.8s;
+        text-decoration: none;
+    }
+
+    .navbar { 
+        background-color: var(--color5);
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        padding: 15px;
+    }
+    
+    .navbar a:link, a:visited {  
+        color: black;
+        transition: 0.8s;
+    }
+    
+    .navbar a:hover {
+        background-color: var(--color4);
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .redes-sociais img{
+        padding: 0;
+        margin: 0;
+        height: 20px;
+    }
+
+    #porta{
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 10px 10px 10px rgb(95, 95, 95);
+    }
+
+    #titulo{
+        color: black;
+        text-shadow: 5px 5px 15px grey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* Smartphone Horizontal */
+@media (min-width: 576px) {
+
+    .corpo{
+        padding: 0 100px;
+        margin: 35px 10px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .corpo-card{
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 20% 20% 20% 20%;
+    }
+    
+    .cardP{
+        padding: 30px 50px;
+        margin: auto;
+        border: solid 1px var(--color5);
+    }
+
+    .card img{
+        border-radius: 20px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .card h1{
+        font-size: 20px;
+    }
+    
+    .card:hover{
+        box-shadow: 0 0 20px 5px var(--color5);
+        background-color: var(--color5);
+        color: black;
+        transition: 0.3s;
+    }
+    
+    .card a:link, a:visited {  
+        color: black;
+        transition: 0.8s;
+        text-decoration: none;
+    }
+
+    .navbar { 
+        background-color: var(--color5);
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        padding: 15px;
+    }
+    
+    .navbar a:link, a:visited {  
+        color: black;
+        transition: 0.8s;
+    }
+    
+    .navbar a:hover {
+        background-color: var(--color4);
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .redes-sociais img{
+        padding: 0;
+        margin: 0;
+        height: 20px;
+    }
+
+    #porta{
+        border-radius: 10px;
+        margin: 10px 200px;
+        box-shadow: 10px 10px 10px rgb(95, 95, 95);
+    }
+
+    #titulo{
+        color: black;
+        text-shadow: 5px 5px 15px grey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* Computador */
+@media (min-width: 1200px) {
+
+    .corpo{
+        padding: 0 100px;
+        margin: 35px 10px;
+        text-align: center;
+        display: flex;
+    }
+    
+    .corpo-card{
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+    }
+    
+    .cardP{
+        padding: 30px;
+        margin: auto;
+        border: solid 1px var(--color5);
+    }
+
+    .cardP img{
+        height: 150px;
+    }
+    
+    .card {
+        border: solid var(--color5);
+        border-radius: 10px;
+        color: var(--color5);
+        padding: 5px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+    
+    .card img{
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .card:hover{
+        box-shadow: 0 0 20px 5px var(--color5);
+        background-color: var(--color5);
+        color: black;
+        transition: 0.3s;
+    }
+    
+    .card a:link, a:visited {  
+        color: black;
+        transition: 0.8s;
+        text-decoration: none;
+    }
+
+    .navbar { 
+        background-color: var(--color5);
+        padding: 2px 0;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        padding: 15px;
+    }
+    
+    .navbar a:link, a:visited {  
+        color: black;
+        transition: 0.8s;
+    }
+    
+    .navbar a:hover {
+        background-color: var(--color4);
+        border-radius: 10px;
+        padding: 15px;
+        transition: 0.3s;
+    }
+
+    .redes-sociais img{
+        padding: 0;
+        margin: 0;
+        height: 30px;
+    }
+
+    #porta{
+        border-radius: 10px;
+        margin: 20px 20px 20px 300px;
+        box-shadow: 10px 10px 10px rgb(95, 95, 95);
+    }
+   
+    #titulo{
+        color: black;
+        text-shadow: 5px 5px 15px grey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 30px;
+    }
+}
